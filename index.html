@@ -12,55 +12,76 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <nav class="nav" aria-label="页面导航">
+      <a class="brand" href="#">Nasdaq Guide</a>
+      <div>
+        <a href="#overview">概览</a>
+        <a href="#composition">构成</a>
+        <a href="#timeline">时间线</a>
+        <a href="#read">阅读要点</a>
+      </div>
+    </nav>
     <main>
       <section class="hero">
-        <nav class="topbar" aria-label="页面导航">
-          <a href="#overview">概览</a>
-          <a href="#timeline">时间线</a>
-          <a href="#read">如何阅读</a>
-        </nav>
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="kicker">Nasdaq Guide</p>
-            <h1>纳指：理解美国创新经济的一扇窗口</h1>
-            <p class="lead">用一个网页快速看懂纳斯达克指数的含义、构成逻辑、历史脉络，以及投资者阅读它时最容易忽略的细节。</p>
-            <div class="hero-actions">
-              <a href="#overview" class="primary-action">开始了解</a>
-              <a href="#read" class="secondary-action">阅读要点</a>
-            </div>
-          </div>
-          <div class="market-panel" aria-label="纳指视觉摘要">
-            <div class="panel-header"><span>NASDAQ INDEX MAP</span><strong>Growth pulse</strong></div>
-            <div class="ticker-line"><span>Technology</span><span>Consumer</span><span>Health care</span><span>Industrials</span></div>
-            <div class="chart" aria-hidden="true"><span style="height:38%"></span><span style="height:58%"></span><span style="height:46%"></span><span style="height:76%"></span><span style="height:64%"></span><span style="height:86%"></span><span style="height:72%"></span><span style="height:92%"></span><span style="height:80%"></span></div>
-            <div class="signal-row"><div><small>观察重点</small><b>权重集中度</b></div><div><small>核心变量</small><b>盈利增长</b></div><div><small>市场性格</small><b>成长敏感</b></div></div>
+        <p class="eyebrow">Nasdaq Guide</p>
+        <h1>纳指，创新经济的温度。</h1>
+        <p class="hero-copy">看懂纳斯达克指数，不只是看一条涨跌曲线，而是理解大型科技公司、成长资产、利率环境与市场预期如何彼此牵引。</p>
+        <div class="hero-actions">
+          <a class="primary" href="#overview">开始了解</a>
+          <a class="secondary" href="#read">快速阅读</a>
+        </div>
+        <div class="device" aria-label="纳指趋势视觉图">
+          <div class="device-top"><span>NASDAQ COMPOSITE</span><strong>Innovation pulse</strong></div>
+          <div class="line-chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="device-metrics">
+            <div><b>1971</b><small>市场启动</small></div>
+            <div><b>1985</b><small>Nasdaq-100</small></div>
+            <div><b>3000+</b><small>综合指数样本</small></div>
           </div>
         </div>
       </section>
-      <section class="stats-band" aria-label="纳指关键节点">
-        <article class="stat stat-blue"><strong>1971</strong><span>纳斯达克市场启动</span></article>
-        <article class="stat stat-green"><strong>1985</strong><span>Nasdaq-100 指数诞生</span></article>
-        <article class="stat stat-orange"><strong>3000+</strong><span>综合指数覆盖大量上市公司</span></article>
-      </section>
-      <section id="overview" class="content-section">
-        <div class="section-intro"><p class="kicker">Overview</p><h2>三个问题，先把概念理清</h2></div>
-        <div class="card-grid">
-          <article class="info-card"><span>What</span><h3>纳指到底是什么？</h3><p>日常说的“纳指”常指纳斯达克综合指数，也可能指更聚焦大型非金融公司的 Nasdaq-100。前者像一张纳斯达克市场全景图，后者更像科技与成长型巨头的样本篮子。</p></article>
-          <article class="info-card"><span>How</span><h3>它怎么运动？</h3><p>指数会随成分股价格与权重变化而波动。市值更大的公司通常对指数影响更明显，所以少数龙头企业的业绩、估值和市场情绪，常常会带动指数方向。</p></article>
-          <article class="info-card"><span>Why</span><h3>为什么大家关注它？</h3><p>纳指长期承载了美国创新经济的叙事：软件、半导体、互联网平台、云计算、生物科技与消费科技都在其中留下了重要权重。</p></article>
+      <section id="overview" class="section">
+        <p class="eyebrow">Overview</p>
+        <h2>先分清两个常被混用的“纳指”。</h2>
+        <div class="feature-grid">
+          <article><h3>纳斯达克综合指数</h3><p>覆盖在纳斯达克上市的大量公司，更像一张市场全景图。</p></article>
+          <article><h3>Nasdaq-100</h3><p>聚焦纳斯达克上市的大型非金融公司，更像成长龙头样本篮子。</p></article>
+          <article><h3>日常语境</h3><p>媒体说“纳指”时常混用两者，阅读前最好先确认指的是哪一个。</p></article>
         </div>
       </section>
-      <section class="split-section">
-        <div><p class="kicker">Composition</p><h2>纳指更像一张“创新资产雷达图”</h2><p>纳斯达克市场聚集了大量科技、通信服务、消费科技和医疗创新企业，因此纳指常被用来观察成长型资产的风险偏好。它并不等同于“所有科技股”，但它的涨跌往往会把市场对未来增长、利率变化和企业盈利质量的预期放大出来。</p></div>
-        <div class="radar-list" aria-label="主要观察维度"><div><b>企业质量</b><span>收入增长、毛利率、现金流与研发效率。</span></div><div><b>估值环境</b><span>利率、风险偏好和长期增长预期共同影响估值。</span></div><div><b>行业周期</b><span>半导体、云服务、AI 和消费电子会形成不同周期。</span></div></div>
+      <section id="composition" class="section split">
+        <div><p class="eyebrow">Composition</p><h2>它不是科技股的同义词，但它很懂成长股。</h2></div>
+        <p>纳斯达克市场聚集了软件、半导体、互联网平台、云计算、消费科技和医疗创新企业。因此纳指常被用来观察市场对未来增长、利率变化和企业盈利质量的预期。</p>
       </section>
-      <section id="timeline" class="content-section dark-section">
-        <div class="section-intro"><p class="kicker">Timeline</p><h2>从电子交易市场到全球成长股风向标</h2></div>
-        <div class="timeline"><article><time>1971</time><p>纳斯达克成为早期电子化证券交易市场之一。</p></article><article><time>1985</time><p>Nasdaq-100 推出，聚焦纳斯达克上市的非金融大型公司。</p></article><article><time>1990s</time><p>互联网浪潮让纳指成为科技周期的代表性温度计。</p></article><article><time>2010s</time><p>云计算、移动互联网和平台企业推高大型科技公司的权重。</p></article><article><time>2020s</time><p>人工智能、半导体和盈利质量成为解读纳指的重要关键词。</p></article></div>
+      <section class="contrast">
+        <p class="eyebrow">How to read</p>
+        <h2>指数上涨，不代表所有公司都在上涨。</h2>
+        <div class="contrast-grid">
+          <div><b>权重</b><span>少数巨头可能决定指数的大部分方向。</span></div>
+          <div><b>广度</b><span>看上涨公司数量，判断行情是否健康。</span></div>
+          <div><b>估值</b><span>利率与长期增长预期会放大波动。</span></div>
+        </div>
       </section>
-      <section id="read" class="content-section read-section">
-        <div class="section-intro"><p class="kicker">Reading Notes</p><h2>读纳指时，记住这四点</h2></div>
-        <ol class="tips-list"><li>先区分“纳斯达克综合指数”和“Nasdaq-100”，不要把两个指数完全等同。</li><li>看指数涨跌时，同时观察少数巨头的权重贡献和市场广度。</li><li>纳指不是科技公司的同义词，但它确实更容易反映成长股和创新资产的情绪。</li><li>指数上涨不等于所有成分股都上涨，集中度越高，这一点越重要。</li></ol>
+      <section id="timeline" class="section">
+        <p class="eyebrow">Timeline</p>
+        <h2>从电子交易市场，到全球成长股风向标。</h2>
+        <div class="timeline">
+          <article><time>1971</time><p>纳斯达克成为早期电子化证券交易市场之一。</p></article>
+          <article><time>1985</time><p>Nasdaq-100 推出，聚焦纳斯达克上市的非金融大型公司。</p></article>
+          <article><time>1990s</time><p>互联网浪潮让纳指成为科技周期的代表性温度计。</p></article>
+          <article><time>2010s</time><p>云计算、移动互联网和平台企业推高大型科技公司的权重。</p></article>
+          <article><time>2020s</time><p>人工智能、半导体和盈利质量成为解读纳指的重要关键词。</p></article>
+        </div>
+      </section>
+      <section id="read" class="section closing">
+        <p class="eyebrow">Reading Notes</p>
+        <h2>读纳指时，记住四件事。</h2>
+        <ol>
+          <li>先区分纳斯达克综合指数和 Nasdaq-100。</li>
+          <li>观察少数巨头的权重贡献，也观察市场广度。</li>
+          <li>纳指更容易反映成长股和创新资产的风险偏好。</li>
+          <li>指数上涨不等于所有成分股都上涨。</li>
+        </ol>
       </section>
     </main>
   </body>
